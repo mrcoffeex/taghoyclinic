@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 23, 2023 at 07:05 AM
+-- Generation Time: Feb 05, 2024 at 05:46 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.0.15
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `botique_data`
+-- Database: `taghoyclinic`
 --
 
 -- --------------------------------------------------------
@@ -104,14 +104,12 @@ CREATE TABLE `gy_category` (
 --
 
 INSERT INTO `gy_category` (`gy_cat_id`, `gy_cat_name`) VALUES
-(1, 'Dress'),
-(2, 'Pants'),
-(11, 'Shorts'),
-(13, 'Shirts'),
-(14, 'Gown'),
-(15, 'Casual'),
-(16, 'Beauty Products'),
-(17, 'Hygiene');
+(1, 'capsules'),
+(2, 'tablets'),
+(11, 'vials'),
+(13, 'bandages'),
+(14, 'syrup'),
+(18, 'various');
 
 -- --------------------------------------------------------
 
@@ -146,6 +144,14 @@ CREATE TABLE `gy_expenses` (
   `gy_branch_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `gy_expenses`
+--
+
+INSERT INTO `gy_expenses` (`gy_exp_id`, `gy_exp_type`, `gy_exp_note`, `gy_exp_amount`, `gy_user_id`, `gy_approved_by`, `gy_exp_date`, `gy_branch_id`) VALUES
+(1, 'CASH', 'pamsahe', 100, 4, 1, '2023-08-20 17:27:04', 0),
+(2, 'FOR_USE', 'Pull-Out (For Use) Item: ACCLOVIR 800 G TAB OXYCLOVRAX 10 box Note: asdasd', 440100, 6, 6, '2024-02-06 00:31:11', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -179,7 +185,7 @@ CREATE TABLE `gy_my_project` (
 --
 
 INSERT INTO `gy_my_project` (`gy_project`, `gy_project_name`, `gy_project_address`, `gy_system_title`, `gy_year_origin`) VALUES
-(1, 'La Viktoria Trends', 'Digos City', '', '2023-06-13 11:27:07');
+(1, 'STORE_NAME', 'STORE_ADDRESS', '', '2023-06-13 11:27:07');
 
 -- --------------------------------------------------------
 
@@ -222,7 +228,65 @@ INSERT INTO `gy_notification` (`gy_notif_id`, `gy_notif_text`, `gy_notif_date`) 
 (22, 'Cash Transaction ID 100001 is sold by Cashier 1', '2023-06-13 16:06:02'),
 (23, 'Master Developer -> approved Refund Notification from TransCode: 100001 - 2 -> 1 pcs of Casual Dress Green by Cashier 1', '2023-06-13 16:08:08'),
 (24, 'Logout Notification by Cashier 1', '2023-06-13 16:08:51'),
-(25, 'Login Notification by Cashier 1', '2023-06-23 12:35:58');
+(25, 'Login Notification by Cashier 1', '2023-06-23 12:35:58'),
+(26, 'sample dress red is added to products by Master Developer', '2023-08-20 02:05:00'),
+(27, 'sample dress red Product Update ->  by Master Developer', '2023-08-20 02:07:20'),
+(28, 'sample dress red Product Update -> Restock Limit: 5 -> 2 ,  by Master Developer', '2023-08-20 02:07:28'),
+(29, 'Login Notification by Cashier 1', '2023-08-20 03:17:20'),
+(30, 'Logout Notification by Cashier 1', '2023-08-20 03:17:30'),
+(31, 'Login Notification by Cashier 1', '2023-08-20 05:21:41'),
+(32, '100.00 is added to expenses by Cashier 1', '2023-08-20 17:27:04'),
+(33, 'Cash Transaction ID 100002 is sold by Cashier 1', '2023-08-20 17:35:29'),
+(34, 'Cash Transaction ID 100003 is sold by Cashier 1', '2023-08-20 17:35:47'),
+(35, 'Logout Notification by Cashier 1', '2023-08-20 17:45:35'),
+(36, 'Login Notification by Cashier 1', '2023-08-20 05:47:03'),
+(37, 'Login Notification by Cashier 1', '2023-08-21 03:51:14'),
+(38, '100.00 is added to expenses by Cashier 1', '2023-08-21 03:51:31'),
+(39, 'Logout Notification by Cashier 1', '2023-08-21 03:51:56'),
+(40, 'One Expense record has been removed by Master Developer', '2023-08-21 03:53:07'),
+(41, 'Login Notification by Cashier 1', '2023-08-21 04:41:02'),
+(42, 'Login Notification by Cashier 1', '2024-01-13 15:48:33'),
+(43, 'Cash Transaction ID 100004 is sold by Cashier 1', '2024-01-13 15:49:01'),
+(44, 'Logout Notification by Cashier 1', '2024-01-13 15:49:12'),
+(45, 'Login Notification by Cashier 1', '2024-02-03 08:07:10'),
+(46, 'Logout Notification by Cashier 1', '2024-02-03 08:07:15'),
+(47, 'Login Notification by Cashier 1', '2024-02-03 09:44:57'),
+(48, 'Casual Dress Green was removed from products by Master Developer', '2024-02-03 09:47:11'),
+(49, 'Casual Night Dress Red was removed from products by Master Developer', '2024-02-03 09:47:16'),
+(50, 'Pink Long Gown was removed from products by Master Developer', '2024-02-03 09:47:20'),
+(51, 'sample dress red was removed from products by Master Developer', '2024-02-03 09:47:24'),
+(52, 'Login Notification by Cashier 1', '2024-02-03 09:52:06'),
+(53, 'AMLODIPINE DIADIPINE is added to products by Master Developer', '2024-02-03 09:53:39'),
+(54, 'Cash Transaction ID 100005 is sold by Cashier 1', '2024-02-03 09:56:04'),
+(55, 'Logout Notification by Cashier 1', '2024-02-03 09:59:18'),
+(56, ' is added to system users by Master Developer', '2024-02-03 10:01:17'),
+(57, 'Login Notification by inventory1', '2024-02-03 10:01:34'),
+(58, 'delete_product command -> is Updated by Master Developer', '2024-02-03 10:13:57'),
+(59, 'AMLODIPINE DIADIPINE was removed from products by Master Developer', '2024-02-03 10:14:34'),
+(60, 'ACCLOVIR 800 G TABOXYCLOVRAX is added to products by Master Developer', '2024-02-03 10:21:19'),
+(61, 'ACCLOVIR 800 G TABOXYCLOVRAX Product Update -> Product Description: ACCLOVIR 800 G TABOXYCLOVRAX -> ACCLOVIR 800 G TAB OXYCLOVRAX ,  by Master Developer', '2024-02-03 10:22:32'),
+(62, 'Restock Alert from NONE Re-Stock Code No. 1002 by Master Developer', '2024-02-03 10:25:38'),
+(63, 'Login Notification by Cashier 1', '2024-02-03 10:30:41'),
+(64, 'ACCLOVIR 800 G TAB OXYCLOVRAX Product Update -> Discount Limit: 43010 -> 42000 ,  by Master Developer', '2024-02-03 10:31:23'),
+(65, ' is added to system users by Master Developer', '2024-02-05 23:05:53'),
+(66, 'Login Notification by Inventory 1', '2024-02-05 23:15:13'),
+(67, 'ACCLOVIR 800 G TAB OXYCLOVRAX Product Update ->  by Inventory 1', '2024-02-05 23:34:06'),
+(68, 'ACCLOVIR 800 G TAB OXYCLOVRAX Product Update ->  by Inventory 1', '2024-02-05 23:43:47'),
+(69, 'ACCLOVIR 800 G TAB OXYCLOVRAX Product Update ->  by Inventory 1', '2024-02-05 23:44:08'),
+(70, 'ACCLOVIR 800 G TAB OXYCLOVRAX Product Update ->  by Inventory 1', '2024-02-05 23:44:10'),
+(71, 'ACCLOVIR 800 G TAB OXYCLOVRAX Product Update ->  by Inventory 1', '2024-02-05 23:44:17'),
+(72, 'Restock Alert from NONE Re-Stock Code No. 1003 by Inventory 1', '2024-02-06 00:22:46'),
+(73, 'Restock Alert from NONE Re-Stock Code No. 1004 by Inventory 1', '2024-02-06 00:29:20'),
+(74, 'Pull-Out Alert by Inventory 1 Pull-Out Code No. 1001 by Inventory 1', '2024-02-06 00:31:11'),
+(75, 'Pull-Out Alert by Inventory 1 Pull-Out Code No. 1002 by Inventory 1', '2024-02-06 00:32:34'),
+(76, 'Pull-Out Alert by Inventory 1 Pull-Out Code No. 1003 by Inventory 1', '2024-02-06 00:33:30'),
+(77, 'Logout Notification by Inventory 1', '2024-02-06 00:37:06'),
+(78, 'Login Notification by Inventory 1', '2024-02-06 00:37:43'),
+(79, 'ACCLOVIR 800 G TAB OXYCLOVRAX Product Update ->  by Inventory 1', '2024-02-06 00:38:12'),
+(80, 'Mineral Water is added to products by Inventory 1', '2024-02-06 00:43:23'),
+(81, 'Mineral Water Product Update ->  by Inventory 1', '2024-02-06 00:45:00'),
+(82, 'Mineral Water Product Update ->  by Inventory 1', '2024-02-06 00:45:13'),
+(83, 'Mineral Water Product Update ->  by Inventory 1', '2024-02-06 00:45:27');
 
 -- --------------------------------------------------------
 
@@ -242,7 +306,7 @@ CREATE TABLE `gy_optimum_secure` (
 --
 
 INSERT INTO `gy_optimum_secure` (`gy_sec_id`, `gy_sec_value`, `gy_sec_type`, `gy_user_id`) VALUES
-(1, 'ZKfWomUWOD8ov+JiQEREoHSRFm07M53YZstM20QXuGo=', 'delete_product', 1),
+(1, '7oI2xUsEE6CCVgX792ufBAlIsFs5N/B8FhmM1qLbaVs=', 'delete_product', 1),
 (2, 'ZKfWomUWOD8ov+JiQEREoHSRFm07M53YZstM20QXuGo=', 'add_discount', 1),
 (3, 'ZKfWomUWOD8ov+JiQEREoHSRFm07M53YZstM20QXuGo=', 'delete_sales', 1),
 (4, 'ZKfWomUWOD8ov+JiQEREoHSRFm07M53YZstM20QXuGo=', 'update_cash', 1),
@@ -296,9 +360,8 @@ CREATE TABLE `gy_products` (
 --
 
 INSERT INTO `gy_products` (`gy_product_id`, `gy_product_code`, `gy_convert_item_code`, `gy_convert_value`, `gy_supplier_code`, `gy_product_name`, `gy_product_cat`, `gy_product_color`, `gy_product_image`, `gy_product_desc`, `gy_product_unit`, `gy_product_price_cap`, `gy_product_price_srp`, `gy_product_quantity`, `gy_product_discount_per`, `gy_product_restock_limit`, `gy_product_date_restock`, `gy_product_date_reg`, `gy_product_update_date`, `gy_added_by`, `gy_update_code`, `gy_branch_id`) VALUES
-(1, '243123123123', '', 0, '0', 'Casual Night Dress Red', 'Dress', 'Red', '20230613145131_52d6ea234037ab29e292b944d908396ffff8ff0d_clv6839_3.jpg', 'red', 'pcs', 250, 500, 0, 490, 0, '2023-06-13 14:07:28', '2023-06-13 14:07:28', '2023-06-13 15:10:04', 1, '10001', 1),
-(2, '7675645', '', 0, '0', 'Casual Dress Green', 'Dress', 'Green', '20230613145517__emerald_green_gown_with_slit_1669872259_f68c58b7.jpg', 'green', 'pcs', 500, 900, 3, 855, 0, '2023-06-13 16:04:18', '2023-06-13 14:55:17', '2023-06-13 14:55:17', 1, '10002', 1),
-(3, '4545-01', '', 0, '0', 'Pink Long Gown', 'Gown', 'Pink', '20230613160200_ASHLEIGH-PINK-SEQUIN-VELVET-2.jpg', 'pink long gown', 'pcs', 700, 1350, 1, 1300, 0, '2023-06-13 16:02:00', '2023-06-13 16:02:00', '2023-06-13 16:02:48', 1, '10003', 1);
+(6, '65656', '', 0, '0', 'ACCLOVIR 800 G TAB OXYCLOVRAX', 'tablets', 'Red', '', '', 'box', 0, 44010, 29, 42000, 5, '2024-02-06 00:29:19', '2024-02-03 10:21:19', '2024-02-06 00:38:12', 1, '10001', 1),
+(7, '6454342', '', 0, '0', 'Mineral Water', 'various', 'Orange', '', '', 'pcs', 0, 20, 30, 20, 5, '2024-02-06 00:43:23', '2024-02-06 00:43:23', '2024-02-06 00:45:27', 6, '10002', 1);
 
 -- --------------------------------------------------------
 
@@ -320,6 +383,15 @@ CREATE TABLE `gy_pullout` (
   `gy_pullout_by` int(11) NOT NULL,
   `gy_branch_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gy_pullout`
+--
+
+INSERT INTO `gy_pullout` (`gy_pullout_id`, `gy_pullout_code`, `gy_pullout_type`, `gy_product_id`, `gy_product_name`, `gy_pullout_note`, `gy_pullout_quantity`, `gy_pullout_date`, `gy_pullout_status`, `gy_backorder_status`, `gy_pullout_by`, `gy_branch_id`) VALUES
+(1, '1001', 'FOR_USE', 6, 'ACCLOVIR 800 G TAB OXYCLOVRAX', 'asdasd', 10, '2024-02-06 00:26:15', 1, 0, 6, 1),
+(2, '1002', 'EXPIRED', 6, 'ACCLOVIR 800 G TAB OXYCLOVRAX', 'asdasdasd', 1, '2024-02-06 00:32:28', 1, 0, 6, 1),
+(3, '1003', 'EXPIRED', 6, 'ACCLOVIR 800 G TAB OXYCLOVRAX', 'asdasd', 1, '2024-02-06 00:33:21', 1, 0, 6, 1);
 
 -- --------------------------------------------------------
 
@@ -396,7 +468,10 @@ CREATE TABLE `gy_restock` (
 --
 
 INSERT INTO `gy_restock` (`gy_restock_id`, `gy_restock_code`, `gy_product_id`, `gy_product_name`, `gy_product_old_price`, `gy_product_price_cap`, `gy_product_old_srp`, `gy_product_price_srp`, `gy_old_price_date`, `gy_supplier_code`, `gy_supplier_name`, `gy_restock_note`, `gy_restock_quantity`, `gy_restock_date`, `gy_restock_status`, `gy_restock_by`, `gy_branch_id`) VALUES
-(1, '1001', 2, 'Casual Dress Green', 500, 500, 900, 900, '2023-06-13 14:55:17', 0, 'NONE', '2 added quantity', 2, '2023-06-13 16:03:42', 1, 1, 1);
+(1, '1001', 2, 'Casual Dress Green', 500, 500, 900, 900, '2023-06-13 14:55:17', 0, 'NONE', '2 added quantity', 2, '2023-06-13 16:03:42', 1, 1, 1),
+(2, '1002', 6, 'ACCLOVIR 800 G TAB OXYCLOVRAX', 0, 0, 43010, 43010, '2024-02-03 10:21:19', 0, 'NONE', 'kent', 10, '2024-02-03 10:24:21', 1, 1, 1),
+(4, '1003', 6, 'ACCLOVIR 800 G TAB OXYCLOVRAX', 0, 0, 43010, 43010, '2024-02-03 10:25:38', 0, 'NONE', 'asdasd', 10, '2024-02-05 23:49:02', 1, 6, 1),
+(5, '1004', 6, 'ACCLOVIR 800 G TAB OXYCLOVRAX', 0, 0, 43010, 44010, '2024-02-06 00:22:46', 0, 'NONE', 'asdasdasd', 11, '2024-02-06 00:26:38', 1, 6, 1);
 
 -- --------------------------------------------------------
 
@@ -529,7 +604,11 @@ CREATE TABLE `gy_transaction` (
 
 INSERT INTO `gy_transaction` (`gy_trans_id`, `gy_trans_code`, `gy_trans_pay`, `gy_trans_check_per`, `gy_trans_check_num`, `gy_trans_royal_fee`, `gy_trans_cardcent`, `gy_trans_custname`, `gy_trans_date`, `gy_trans_type`, `gy_trans_total`, `gy_trans_discount`, `gy_trans_cash`, `gy_trans_depositpay`, `gy_trans_change`, `gy_prepared_by`, `gy_user_id`, `gy_tra_code`, `gy_trans_status`, `gy_trans_check`, `gy_trans_check_date`, `gy_branch_id`) VALUES
 (1, '100001', 0, 0, '', 0, 0, 'vicky', '2023-06-13 16:06:02', 1, 1400, 0, 1500, 0, 100, 4, 4, '', 1, 0, '0000-00-00 00:00:00', 1),
-(2, '100002', 0, 0, '', 0, 0, '', '0000-00-00 00:00:00', 0, 0, 0, 0, 0, 0, 4, 0, '', 0, 0, '0000-00-00 00:00:00', 1);
+(2, '100002', 0, 0, '', 0, 0, 'maria', '2023-08-20 17:35:29', 1, 1800, 0, 2000, 0, 200, 4, 4, '', 1, 0, '0000-00-00 00:00:00', 1),
+(3, '100003', 0, 0, '', 0, 0, 'sample ', '2023-08-20 17:35:46', 1, 1350, 0, 1400, 0, 50, 4, 4, '', 1, 0, '0000-00-00 00:00:00', 1),
+(4, '100004', 0, 0, '', 0, 0, 'asdasd', '2024-01-13 15:49:01', 1, 900, 0, 1000, 0, 100, 4, 4, '', 1, 0, '0000-00-00 00:00:00', 1),
+(5, '100005', 0, 0, '', 0, 0, 'kent', '2024-02-03 09:56:04', 1, 750, 0, 1000, 0, 250, 4, 4, '', 1, 0, '0000-00-00 00:00:00', 1),
+(6, '100006', 0, 0, '', 0, 0, '', '0000-00-00 00:00:00', 0, 0, 0, 0, 0, 0, 4, 0, '', 0, 0, '0000-00-00 00:00:00', 1);
 
 -- --------------------------------------------------------
 
@@ -558,7 +637,12 @@ CREATE TABLE `gy_trans_details` (
 
 INSERT INTO `gy_trans_details` (`gy_transdet_id`, `gy_trans_code`, `gy_transdet_date`, `gy_product_id`, `gy_product_price`, `gy_product_origprice`, `gy_product_discount`, `gy_trans_quantity`, `gy_trans_ref_rep_quantity`, `gy_trans_claim_quantity`, `gy_transdet_type`, `gy_check_status`) VALUES
 (5, '100001', '2023-06-13 16:06:02', 2, 900, 900, 0, 1, 0, 1, 1, 0),
-(6, '100001', '2023-06-13 16:06:02', 1, 500, 500, 0, 1, 1, 1, 1, 0);
+(6, '100001', '2023-06-13 16:06:02', 1, 500, 500, 0, 1, 1, 1, 1, 0),
+(7, '100002', '2023-08-20 17:35:29', 2, 900, 900, 0, 2, 2, 2, 1, 0),
+(8, '100003', '2023-08-20 17:35:46', 3, 1350, 1350, 0, 1, 1, 1, 1, 0),
+(9, '100004', '2024-01-13 15:49:01', 2, 900, 900, 0, 1, 1, 1, 1, 0),
+(10, '100005', '2024-02-03 09:56:04', 5, 15, 15, 0, 50, 50, 50, 1, 0),
+(11, '100006', '2024-02-03 10:31:38', 6, 43010, 43010, 0, 1, 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -631,7 +715,8 @@ CREATE TABLE `gy_user` (
 
 INSERT INTO `gy_user` (`gy_user_id`, `gy_user_code`, `gy_full_name`, `gy_username`, `gy_password`, `gy_user_type`, `gy_user_status`, `gy_branch_id`) VALUES
 (1, '0', 'Master Developer', 'dev', 'gozElr3tOF4jED67gzd4r2smH2NWy83w+P89isjSSgM=', 0, 0, 0),
-(4, '60899184', 'Cashier 1', 'cashier', 'dHK3s6lz86wwNIZnd8hitl/WeY1BA4uNN6PF1KOBUpc=', 2, 0, 1);
+(4, '60899184', 'Cashier 1', 'cashier', 'gozElr3tOF4jED67gzd4r2smH2NWy83w+P89isjSSgM=', 2, 0, 1),
+(6, '06650421', 'Inventory 1', 'inventory1', 'gozElr3tOF4jED67gzd4r2smH2NWy83w+P89isjSSgM=', 1, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -873,7 +958,7 @@ ALTER TABLE `gy_breakdown`
 -- AUTO_INCREMENT for table `gy_category`
 --
 ALTER TABLE `gy_category`
-  MODIFY `gy_cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `gy_cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `gy_deposit`
 --
@@ -883,7 +968,7 @@ ALTER TABLE `gy_deposit`
 -- AUTO_INCREMENT for table `gy_expenses`
 --
 ALTER TABLE `gy_expenses`
-  MODIFY `gy_exp_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `gy_exp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `gy_interest`
 --
@@ -898,7 +983,7 @@ ALTER TABLE `gy_my_project`
 -- AUTO_INCREMENT for table `gy_notification`
 --
 ALTER TABLE `gy_notification`
-  MODIFY `gy_notif_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `gy_notif_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 --
 -- AUTO_INCREMENT for table `gy_optimum_secure`
 --
@@ -908,12 +993,12 @@ ALTER TABLE `gy_optimum_secure`
 -- AUTO_INCREMENT for table `gy_products`
 --
 ALTER TABLE `gy_products`
-  MODIFY `gy_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `gy_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `gy_pullout`
 --
 ALTER TABLE `gy_pullout`
-  MODIFY `gy_pullout_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `gy_pullout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `gy_refund`
 --
@@ -928,7 +1013,7 @@ ALTER TABLE `gy_remittance`
 -- AUTO_INCREMENT for table `gy_restock`
 --
 ALTER TABLE `gy_restock`
-  MODIFY `gy_restock_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `gy_restock_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `gy_rqt`
 --
@@ -953,12 +1038,12 @@ ALTER TABLE `gy_tra`
 -- AUTO_INCREMENT for table `gy_transaction`
 --
 ALTER TABLE `gy_transaction`
-  MODIFY `gy_trans_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `gy_trans_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `gy_trans_details`
 --
 ALTER TABLE `gy_trans_details`
-  MODIFY `gy_transdet_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `gy_transdet_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `gy_tra_details`
 --
@@ -973,7 +1058,7 @@ ALTER TABLE `gy_unit`
 -- AUTO_INCREMENT for table `gy_user`
 --
 ALTER TABLE `gy_user`
-  MODIFY `gy_user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `gy_user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `gy_void`
 --
