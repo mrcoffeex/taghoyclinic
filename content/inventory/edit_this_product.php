@@ -22,7 +22,6 @@
     $my_product_price_srp = $product_row['gy_product_price_srp'];
     $my_product_unit = $product_row['gy_product_unit'];
     $my_product_quantity = $product_row['gy_product_quantity'];
-    $my_product_discount_per = $product_row['gy_product_discount_per'];
     $my_product_restock_limit = $product_row['gy_product_restock_limit'];
     $my_product_color = $product_row['gy_product_color'];
     $my_product_image = $product_row['gy_product_image'];
@@ -50,7 +49,6 @@
         $my_price_srp = words($_POST['my_price_srp']);
         $my_unit = words($_POST['my_unit']);
         $my_quantity = words($_POST['my_quantity']);
-        $my_limit = words($_POST['my_limit']);
         $my_restock_limit = words($_POST['my_restock_limit']);
         $date_now = date("Y-m-d H:i:s");
 
@@ -85,7 +83,6 @@
                                         gy_product_unit='$my_unit',
                                         gy_product_price_srp='$my_price_srp',
                                         gy_product_quantity='$my_quantity',
-                                        gy_product_discount_per='$my_limit',
                                         gy_product_restock_limit='$my_restock_limit',
                                         gy_product_update_date='$date_now' 
                                         Where 
@@ -102,12 +99,11 @@
                     $my_g = compare_update($my_product_price_srp , $my_price_srp , "Product SRP");
                     $my_h = compare_update($my_product_unit , $my_unit , "Product Unit");
                     $my_i = compare_update($my_product_quantity , $my_quantity , "Quantity");
-                    $my_j = compare_update($my_product_discount_per , $my_limit , "Discount Limit");
                     $my_k = compare_update($my_product_restock_limit , $my_restock_limit , "Restock Limit");
                     $my_l = compare_update($my_product_color , $my_color , "Product Color");
                     $my_m = compare_update($my_product_image , $productImage , "Product Image");
 
-                    $note_text = $my_product_name." Product Update -> ".$my_a."".$my_b."".$my_c."".$my_d."".$my_e."".$my_g."".$my_h."".$my_i."".$my_j."".$my_k."".$my_l."".$my_m;
+                    $note_text = $my_product_name." Product Update -> ".$my_a."".$my_b."".$my_c."".$my_d."".$my_e."".$my_g."".$my_h."".$my_i."".$my_k."".$my_l."".$my_m;
                     my_notify($note_text,$user_info);
                     header("location: edit_product?note=nice_update&cd=$my_dir_value&pn=$pagenum&s_type=$s_type&br=$br&search_text=$search_text");
                 }else{
@@ -130,7 +126,6 @@
                                         gy_product_unit='$my_unit',
                                         gy_product_price_srp='$my_price_srp',
                                         gy_product_quantity='$my_quantity',
-                                        gy_product_discount_per='$my_limit',
                                         gy_product_restock_limit='$my_restock_limit',
                                         gy_product_update_date='$date_now' 
                                         Where 
@@ -146,12 +141,11 @@
                     $my_g = compare_update($my_product_price_srp , $my_price_srp , "Product SRP");
                     $my_h = compare_update($my_product_unit , $my_unit , "Product Unit");
                     $my_i = compare_update($my_product_quantity , $my_quantity , "Quantity");
-                    $my_j = compare_update($my_product_discount_per , $my_limit , "Discount Limit");
                     $my_k = compare_update($my_product_restock_limit , $my_restock_limit , "Restock Limit");
                     $my_l = compare_update($my_product_color , $my_color , "Product Color");
                     $my_m = compare_update($my_product_image , $productImage , "Product Image");
 
-                    $note_text = $my_product_name." Product Update -> ".$my_a."".$my_b."".$my_c."".$my_d."".$my_e."".$my_g."".$my_h."".$my_i."".$my_j."".$my_k."".$my_l."".$my_m;
+                    $note_text = $my_product_name." Product Update -> ".$my_a."".$my_b."".$my_c."".$my_d."".$my_e."".$my_g."".$my_h."".$my_i."".$my_k."".$my_l."".$my_m;
                     my_notify($note_text,$user_info);
                     header("location: edit_product?note=nice_update&cd=$my_dir_value&pn=$pagenum&s_type=$s_type&br=$br&search_text=$search_text");
                 }else{

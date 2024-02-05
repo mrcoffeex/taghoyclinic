@@ -187,7 +187,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <!-- <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Discount Perct. (%)</label>
                                             <select class="form-control" name="my_discount_limit" id="my_discount_limit" onchange="get_the_price()">
@@ -218,7 +218,7 @@
                                             <label>Discounted value</label>
                                             <input type="number" class="form-control" step="0.01" min="0" name="discounted_value" id="discounted_value" readonly required>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="col-md-4">
                                         <div class="form-group">

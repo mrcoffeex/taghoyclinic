@@ -203,39 +203,6 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Discount Perct. (%)</label>
-                                            <select class="form-control" name="my_discount_limit" id="my_discount_limit" onchange="get_the_price()">
-                                                <option value="0">0%</option>
-                                                <option value="5">5%</option>
-                                                <option value="10">10%</option>
-                                                <option value="15">15%</option>
-                                                <option value="20">20%</option>
-                                                <option value="25">25%</option>
-                                                <option value="30">30%</option>
-                                                <option value="35">35%</option>
-                                                <option value="40">40%</option>
-                                                <option value="45">45%</option>
-                                                <option value="50">50%</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Discount Limit</label>
-                                            <input type="number" class="form-control" step="0.01" min="0" name="my_limit" value="<?php echo $product_row['gy_product_discount_per']; ?>" id="my_limit" onkeyup="get_the_discount()" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Discounted value</label>
-                                            <input type="number" class="form-control" step="0.01" min="0" value="<?php echo $product_row['gy_product_price_srp'] - $product_row['gy_product_discount_per']; ?>" name="discounted_value" id="discounted_value" readonly required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="form-group">
                                             <label>Restock Limit /Unit</label>
                                             <input type="number" class="form-control" name="my_restock_limit" min="0" value="<?php echo $product_row['gy_product_restock_limit']; ?>" required>
                                         </div>

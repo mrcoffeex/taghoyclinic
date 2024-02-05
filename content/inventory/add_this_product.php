@@ -19,7 +19,7 @@
         $my_price_srp = words($_POST['my_price_srp']);
         $my_unit = words($_POST['my_unit']);
         $my_quantity = words($_POST['my_quantity']);
-        $my_limit = words($_POST['my_limit']);
+        $my_limit = words($_POST['my_price_srp']);
         $my_restock_limit = words($_POST['my_restock_limit']);
         $date_now = date("Y-m-d H:i:s");
 
