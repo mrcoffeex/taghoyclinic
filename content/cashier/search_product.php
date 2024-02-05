@@ -125,7 +125,7 @@
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-times fa-fw"></i> Pull-Out Product <span style="color: green;">For Use</span> <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-times fa-fw"></i> Pull-Out Product <span style="color: green;">For Use</span> </h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form method="post" enctype="multipart/form-data" action="pull_out?cd=<?php echo $product_row['gy_product_code']; ?>">
@@ -160,7 +160,7 @@
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-times fa-fw"></i> Pull-Out Product <span style="color: orange;">Stock Transfer/DR</span> <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-times fa-fw"></i> Pull-Out Product <span style="color: orange;">Stock Transfer/DR</span> </h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form method="post" enctype="multipart/form-data" action="pull_out?cd=<?php echo $product_row['gy_product_code']; ?>">
@@ -195,7 +195,7 @@
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-times fa-fw"></i> Pull-Out Product <span style="color: red;">Back-Order</span> <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-times fa-fw"></i> Pull-Out Product <span style="color: red;">Back-Order</span> </h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form method="post" enctype="multipart/form-data" action="pull_out?cd=<?php echo $product_row['gy_product_code']; ?>">

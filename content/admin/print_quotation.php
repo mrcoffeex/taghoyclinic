@@ -79,7 +79,7 @@
                         <tr>
                             <th class="total"><center>Bar Code</center></th>
                             <th class="text-left">Description</th>
-                            <th class="text-right">Price (SRP)</th>
+                            <th class="text-right">Unit Price</th>
                             <th class="text-right">Discount</th>
                             <th class="text-right">Price</th>
                             <th class="text-right">Quantity</th>

@@ -196,7 +196,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-money fa-fw"></i> Print Receipt Permission <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-money fa-fw"></i> Print Receipt Permission </h4>
                             </div>
                             <div class="modal-body">
                                 <form method="post" enctype="multipart/form-data" action="print_receipt_thermal_trans?cd=<?php echo $my_dir_value; ?>">

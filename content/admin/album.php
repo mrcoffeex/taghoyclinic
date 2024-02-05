@@ -173,7 +173,7 @@
                                                                             Description: <br>
                                                                             Unit: <br>
                                                                             Price (Capt.): <br>
-                                                                            Price (SRP): <br>
+                                                                            Unit Price: <br>
                                                                             Quantity: <br>
                                                                             Restock Limit: <br>
                                                                             Date Restocked: <br>

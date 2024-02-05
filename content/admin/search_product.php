@@ -214,7 +214,7 @@
                                             <th><center>Code</center></th>
                                             <th><center>Description</center></th>
                                             <th><center>Price (Capt.)</center></th>
-                                            <th><center>Price (SRP)</center></th>
+                                            <th><center>Unit Price</center></th>
                                             <th><center>LIMIT</center></th>
                                             <th><center>Quantity</center></th>
                                             <th><center>Branch</center></th>
@@ -297,7 +297,7 @@
                                                                                         Description: <br>
                                                                                         Unit: <br>
                                                                                         Price (Capt.): <br>
-                                                                                        Price (SRP): <br>
+                                                                                        Unit Price: <br>
                                                                                         Quantity: <br>
                                                                                         Restock Limit: <br>
                                                                                         Date Restocked: <br>

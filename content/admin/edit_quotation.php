@@ -148,7 +148,7 @@
                                         <tr>
                                             <th><center>Code</center></th>
                                             <th><center>Description</center></th>
-                                            <th><center>Price (SRP)</center></th>
+                                            <th><center>Unit Price</center></th>
                                             <th><center>Discount</center></th>
                                             <th><center>Price</center></th>
                                             <th><center>Quantity</center></th>
@@ -195,7 +195,7 @@
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-                                                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-edit fa-fw"></i> Edit Item <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-edit fa-fw"></i> Edit Item </h4>
                                                         </div>
                                                         <div class="modal-body">
                                                             <form method="post" enctype="multipart/form-data" action="edit_quantity_q?cd=<?php echo $item_row['gy_transdet_id']; ?>&sd=<?php echo $item_row['gy_trans_code']; ?>">
@@ -232,7 +232,7 @@
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-                                                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-star fa-fw"></i> Add Discount <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-star fa-fw"></i> Add Discount </h4>
                                                         </div>
                                                         <div class="modal-body">
                                                             <form method="post" enctype="multipart/form-data" action="add_discount_q?cd=<?php echo $item_row['gy_transdet_id']; ?>">

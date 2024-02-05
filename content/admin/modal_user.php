@@ -88,16 +88,16 @@
 <!-- Delete -->
 
 <div class="modal fade" id="delete_<?php echo $user_row['gy_user_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
                 <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Delete User <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Delete User </h4>
             </div>
             <div class="modal-body">
                 <form method="post" enctype="multipart/form-data" action="delete_user?cd=<?php echo $user_row['gy_user_id']; ?>">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label>Delete Secure PIN</label>
                                 <input type="password" name="my_secure_pin" class="form-control" autofocus required>
@@ -113,15 +113,15 @@
 <!-- Set -->
 
 <div class="modal fade" id="set_<?php echo $user_row['gy_user_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-folder-open fa-fw"></i> Move to archieve user <?php echo $user_row['gy_full_name']; ?> ? <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                <h4 class="modal-title" id="myModalLabel"><i class="fa fa-folder-open fa-fw"></i> Move to archieve user <?php echo $user_row['gy_full_name']; ?> ? </h4>
             </div>
             <div class="modal-body">
                 <form method="post" enctype="multipart/form-data" action="update_user_status?cd=<?php echo $user_row['gy_user_id']; ?>">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label>Secure PIN</label>
                                 <input type="password" name="my_secure_pin" class="form-control" autofocus required>

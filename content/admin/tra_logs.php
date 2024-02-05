@@ -154,7 +154,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-                                                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Void -> <?php echo @number_format($log_row['col5'],2); ?> <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Void -> <?php echo @number_format($log_row['col5'],2); ?> </h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <form method="post" enctype="multipart/form-data" action="void_tra_log?cd=<?php echo $log_row['col1'].'&mode='.$redirectval.'&code='.$log_row['col6']; ?>&dir=<?php echo $my_dir_value; ?>">

@@ -179,7 +179,7 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Price (SRP)</label>
+                                            <label>Unit Price</label>
                                             <input type="number" class="form-control" step="0.01" min="0" name="my_price_srp" id="my_price_srp" value="<?php echo $product_row['gy_product_price_srp']; ?>" onkeyup="get_the_price()" required>
                                         </div>
                                     </div>

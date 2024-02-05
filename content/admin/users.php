@@ -119,7 +119,7 @@
                                                 <div class="form-group">
                                                     <label>Branch</label>
                                                     <select name="my_branch" id="my_branch" class="form-control" required>
-                                                        <option value="0">All Access</option>
+                                                        <!-- <option value="0">All Access</option> -->
                                                         <?php  
                                                             //get branch
                                                             $getbranch=$link->query("SELECT * From `gy_branch` Order By `gy_branch_id` ASC");
@@ -132,14 +132,12 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label>Role <span style="color: red; font-style: italic;">(*inventory is all access)</span></label>
+                                                    <label>Role</label>
                                                     <select name="my_role" id="my_role" class="form-control" required>
                                                         <option></option>
                                                         <option value="0">Administrator</option>
                                                         <option value="1">Inventory</option>
                                                         <option value="2">Cashier</option>
-                                                        <option value="3">Moderator</option>
-                                                        <option value="4">Preview</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -234,10 +232,6 @@
                                                 $my_role = "Inventory";
                                             }else if ($user_row['gy_user_type'] == "2") {
                                                 $my_role = "Cashier";
-                                            }else if ($user_row['gy_user_type'] == "3") {
-                                                $my_role = "Moderator";
-                                            }else if ($user_row['gy_user_type'] == "4") {
-                                                $my_role = "Preview";
                                             }else{
                                                 $my_role = "unknown";
                                             }

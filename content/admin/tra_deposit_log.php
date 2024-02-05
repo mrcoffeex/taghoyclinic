@@ -118,7 +118,7 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Void -> <?php echo @number_format($log_row['gy_dep_amount'],2); ?> <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Void -> <?php echo @number_format($log_row['gy_dep_amount'],2); ?> </h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <form method="post" enctype="multipart/form-data" action="void_deposit_log?cd=<?php echo $log_row['gy_dep_id']; ?>&acc=<?php echo $log_row['gy_acc_id']; ?>">

@@ -162,7 +162,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-money fa-fw"></i> Overwrite Cash Breakdown <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-money fa-fw"></i> Overwrite Cash Breakdown </h4>
                         </div>
                         <div class="modal-body">
                             <form method="post" enctype="multipart/form-data" action="redirect_manager">

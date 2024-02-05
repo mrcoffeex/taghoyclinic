@@ -190,7 +190,7 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Refund Item <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Refund Item </h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form method="post" enctype="multipart/form-data" action="refund_item?cd=<?php echo $data_row['gy_transdet_id']; ?>">
@@ -231,7 +231,7 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Replace Item <small style="color: #337ab7;">(press TAB to type/press ENTER to process)</small></h4>
+                                                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-trash-o fa-fw"></i> Replace Item </h4>
                                                     </div>
                                                     <div class="modal-body">
                                                         <form method="post" enctype="multipart/form-data" action="replace_item?cd=<?php echo $data_row['gy_transdet_id']; ?>">
