@@ -1,0 +1,17 @@
+//changes made
+
+- transaction summary 
+	- process_transaction
+	- trans_summary
+
+- account search only name search
+	- sales_counter
+	- cashier
+	- edit_quotation
+	- process_transaction
+	- submit_transaction
+	- process_transaction
+	- live_search_account_name (new)
+	- live_search_account_code (remove)
+	- sales
+	- search_sales

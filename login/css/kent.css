@@ -1,0 +1,101 @@
+/*css document*/
+
+body {
+	overflow-x: hidden;
+	background-color: #2b3a63!important;
+	background: url(../img/bg3.png)no-repeat center center fixed;	
+	-webkit-background-size: cover !important; 
+	-moz-background-size: cover !important; 
+	-o-background-size: cover !important; 
+	background-size: cover !important; 
+}
+
+.whity{
+	/*color: white;
+	font-size: 12px;*/
+	display: inline-block;
+    margin-bottom: 5px;
+    color: #fff!important;
+    font-size: 12px!important;
+}
+
+.blabla{
+	font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: #4f504a;
+}
+
+.blabla2{
+	font-family: 'Abel', sans-serif;
+    color: #4f504a;
+    line-height: 0px;
+    padding-bottom: 19px;
+    font-size: 20px;
+}
+.non-decor{
+	text-decoration: none;
+}
+
+.goleft{
+	float: left;
+	width: 100%;
+}
+
+.lll{
+	float: left;
+	width: 90%;
+}
+
+.rrr{
+	float: right;
+	width: 10%;
+}
+
+@media (max-width: 710px) {
+  	.lll{
+		float: left;
+		width: 80%;
+	}
+
+	.rrr{
+		float: right;
+		width: 10%;
+	}
+}
+
+@media (max-width: 420px) {
+  	.lll{
+		float: left;
+		width: 75%;
+	}
+
+	.rrr{
+		float: right;
+		width: 15%;
+	}
+}
+
+@media (max-width: 350px) {
+  	.lll{
+		float: left;
+		width: 65%;
+	}
+
+	.rrr{
+		float: right;
+		width: 25%;
+	}
+}
+
+@media (max-width: 275px) {
+  	.lll{
+		float: left;
+		width: 60%;
+	}
+
+	.rrr{
+		float: right;
+		width: 30%;
+	}
+}

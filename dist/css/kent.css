@@ -1,0 +1,80 @@
+/*css document*/
+
+.ulo_lamisa{
+	background-color: rgb(217, 237, 247);
+}
+
+.ulo_lamisa2{
+	background-color: rgba(255, 150, 0, 0.57);
+}
+
+.ulo_lamisa3{
+	background-color: rgb(217, 83, 79);
+}
+
+.ulo_lamisa4{
+	background-color: rgb(74, 251, 30);
+}
+
+#rowy{
+	background-color: rgba(0, 241, 255, 0.10);
+}
+
+#rowy:hover{
+	background-color: rgba(0, 241, 255, 0.30);
+}
+
+#rowy2{
+	background-color: rgba(255, 150, 0, 0.10);
+}
+
+#rowy2:hover{
+	background-color: rgba(255, 150, 0, 0.25);
+}
+
+#rowy3{
+	background-color: rgba(217, 83, 79, 0.10);
+}
+
+#rowy3:hover{
+	background-color: rgba(217, 83, 79, 0.30);
+}
+
+#rowy4{
+	background-color: rgba(74, 251, 30, 0.10);
+}
+
+#rowy4:hover{
+	background-color: rgba(74, 251, 30, 0.30);
+}
+
+#rowy5{
+	background-color: rgba(0, 0, 0, 0.60);
+	color: white;
+}
+
+#rowy5:hover{
+	background-color: rgba(0, 0, 0, 0.85);
+	color: white;
+}
+
+.pic{
+	height: 200px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+	border-radius: 7px;
+}
+
+#exp{
+	background: rgb(255, 154, 154);
+}
+
+#exp:hover{
+	background: rgb(253, 128, 128);
+}
+
+.text-bold{
+	font-weight: bold;
+}
